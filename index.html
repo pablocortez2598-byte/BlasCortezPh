@@ -37,7 +37,7 @@
         BLAS CORTEZ <span>/ FOTOGRAFIA</span>
       </a>
 
-      <nav>
+      <nav class="desktop-nav">
         <ul class="nav-menu" id="navMenu">
           <li><a href="#hero" class="nav-link active">Inicio</a></li>
           <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
@@ -52,12 +52,82 @@
           <span>Reservar Sesión</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir Menú">
-          <i class="fa-solid fa-bars"></i>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir o Cerrar Menú" aria-expanded="false"
+          aria-controls="mobileNavDropdown">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-dropdown" id="mobileNavDropdown" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-menu">
+          <li>
+            <a href="#hero" class="mobile-nav-link active">
+              <span class="link-idx">01</span>
+              <span class="link-text">Inicio</span>
+              <i class="fa-solid fa-arrow-right link-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#portafolio" class="mobile-nav-link">
+              <span class="link-idx">02</span>
+              <span class="link-text">Portafolio</span>
+              <i class="fa-solid fa-arrow-right link-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#sobre-mi" class="mobile-nav-link">
+              <span class="link-idx">03</span>
+              <span class="link-text">Sobre Mí</span>
+              <i class="fa-solid fa-arrow-right link-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#revelado" class="mobile-nav-link">
+              <span class="link-idx">04</span>
+              <span class="link-text">Revelado RAW</span>
+              <i class="fa-solid fa-arrow-right link-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" class="mobile-nav-link">
+              <span class="link-idx">05</span>
+              <span class="link-text">Contacto</span>
+              <i class="fa-solid fa-arrow-right link-arrow"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+          <a href="#contacto" class="btn btn-primary mobile-cta-btn">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Reservar Sesión</span>
+          </a>
+          <div class="mobile-social-row">
+            <a href="https://www.instagram.com/blas.cortezph" target="_blank" rel="noopener" class="mobile-social-icon"
+              aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/blas.cortez.564" target="_blank" rel="noopener" class="mobile-social-icon"
+              aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/2645824397" target="_blank" rel="noopener" class="mobile-social-icon"
+              aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <!-- Overlay Backdrop for Mobile Navigation -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
   <main>
     <!-- HERO SECTION -->
@@ -68,7 +138,10 @@
       </div>
 
       <div class="container hero-content">
-
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Disponible para Proyectos & Sesiones 2026</span>
+        </div>
 
         <h1 class="hero-title">
           Capturando la <span class="serif-accent">esencia</span> en cada destello de luz.
@@ -92,16 +165,16 @@
 
         <div class="hero-stats-bar">
           <div class="stat-item">
-
+            <div class="stat-number">8+</div>
             <div class="stat-label">Años de Trayectoria</div>
           </div>
           <div class="stat-item">
-
+            <div class="stat-number">150+</div>
             <div class="stat-label">Historias Inmortalizadas</div>
           </div>
           <div class="stat-item">
-
-            <div class="stat-label">Fotografías Unicas</div>
+            <div class="stat-number">10k+</div>
+            <div class="stat-label">Fotografías Únicas</div>
           </div>
         </div>
       </div>

@@ -1167,6 +1167,7 @@ button, input, select, textarea {
   cursor: ew-resize;
   background: linear-gradient(145deg, #1b1b24 0%, #0e0e13 100%);
   container-type: inline-size;
+  touch-action: none;
 }
 
 .comparison-img {
